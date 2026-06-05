@@ -1,0 +1,11 @@
+{
+    "assemblyName": "MedalistI3070",
+    "converterClass": "Virinco.WATS.Converter.Keysight.MedalistI3070Converter",
+    "displayName": "Keysight Medalist i3070 Converter",
+    "description": "Converts Keysight Medalist i3070 ICT test result files to WATS UUT reports.",
+    "version": "1.0.0",
+    "fileFilter": "*.txt",
+    "uploadPath": "C:\\ProgramData\\Virinco\\WATS\\KeysightConverters",
+    "postProcessAction": "Archive",
+    "productGuid": "ecd2e739-9ce8-43ec-8a0d-ed91a3c92c8e"
+}

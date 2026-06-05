@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows;net48</TargetFrameworks>
+    <AssemblyName>MedalistI3070</AssemblyName>
+    <RootNamespace>Virinco.WATS.Converter.Keysight</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Virinco.WATS.Testing" Version="*" />
+    <Compile Remove="ConverterTest.cs" />
+    <Compile Remove="ConverterTests.cs" />
+    <Compile Remove="_legacy_*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Virinco.WATS.Testing" Version="*" />
+    <PackageReference Include="Virinco.WATS.ClientAPI" Version="7.*">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Virinco.WATS.StandardConverters" Version="7.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Virinco.WATS.Testing" Version="*" />
+    <Content Include="Data\ICT3070\testdata_SN98454645.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
+
